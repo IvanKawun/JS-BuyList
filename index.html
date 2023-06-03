@@ -2,15 +2,89 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
 
 
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+	<div class="container">
+		<div class = "firstRectangle">
+		<section class="firstLine">
+			<input type="text" class="typeArea" name="plusProduct" placeholder="Назва товару">
+			<button type="button"  data-tooltip="Додати">Додати</button>
+		</section> 	<br>
+			<hr>
+		<section class="secondLine">
+			<label class="product1">Помідори</label>
+			<section class ="buttonsSect">
+			<button type="button" class="minusButton" data-tooltip="-">-</button>
+			<label class="number">2</label>
+			<button type="button" class="plusButton" data-tooltip="+">+</button>
+			</section>
+			<section class="cancelBought">
+			<button type="button" class="boughtButton" data-tooltip="Куплено">Куплено</button>
+			<button type="button" class="cancelButton" data-tooltip="x">x</button>
+			</section>
+
+		</section>
+			<hr>
+		<section class="thirdLine">
+			<label class="product2">Печиво</label>
+			<section class ="buttonsSect">
+			<button type="button" class="minusButton" data-tooltip="-">-</button>
+			<label class="number">2</label>
+			<button type="button" class="plusButton" data-tooltip="+">+</button>
+			</section>
+			<section class="cancelBought">
+			<button type="button" class="boughtButton" data-tooltip="Куплено">Куплено</button>
+			<button type="button" class="cancelButton" data-tooltip="x">x</button>
+			</section>
+		</section>
+			<hr>
+		<section class = "fourthLine">
+			<label class="product3">Сир</label>
+			<section class ="buttonsSect">
+			<button type="button" class="minusButton" data-tooltip="-">-</button>
+			<label class="number">1</label>
+			<button type="button" class="plusButton" data-tooltip="+">+</button>
+			</section>
+			<section class="cancelBought">
+			<button type="button" class="boughtButton" data-tooltip="Куплено">Куплено</button>
+			<button type="button" class="cancelButton" data-tooltip="x" >x</button>
+			</section>
+		</section>
+		</div>
+		<div class = "secondRectangle">
+		<section class="firstLine2">
+			<h1>Залишилося</h1>
+		</section>
+			<hr>
+		<section class="secondLine2">
+			<section class="amount1">
+				<label>Помідори</label>
+				<label class="amount">2</label>
+			</section>
+			<section class="amount1">
+				<label>Печиво</label>
+				<label class="amount">2</label>
+			</section>
+			<section class="amount1">
+				<label>Сир</label>
+				<label class="amount">1</label>
+			</section>
+		</section>
+			<hr>
+		<section class="thirdLine2">
+			<h1>Куплено</h1>
+		</section>
+			<hr>
+		<section class="fourthLine2">
+			<label>something</label>
+
+		</section>
+		</div>
+	</div>
 </body>
 </html>

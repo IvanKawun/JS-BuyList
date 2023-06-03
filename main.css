@@ -1,17 +1,155 @@
-.product-item {
-	background-color: gray;
-	display: inline-block;
-	height: 25px;
+.container {
+	background-color: lightgray;
 	padding: 5px;
 	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
 }
-
 .amount {
-	background-color: yellow;
+	background-color: orange;
+	color: white;
 	border-radius: 10px;
-	
 	display: inline-block;
 	height: 20px;
 	width: 20px;
 	text-align: center;
+}
+.firstRectangle{
+	width: 70%;
+	background-color: white;
+	margin-right: 2%;
+	display: inline-block;
+    border-radius: 5px;
+}
+.firstLine{
+	align-items: center;
+	height: 25%;
+}
+.typeArea{
+	border-width: 2px;
+	height: 80%;
+}
+.firstLine button{
+	width: 20%;
+	max-width: 20%;
+	margin-right: 20px ;
+	height: 80%;
+	background-color: #2285d0;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	box-shadow: inset 0 -4px 0 0 #2276b7;
+}
+.firstLine input{
+	width: 70%;
+	max-width: 70%;
+	background-color: white;
+	font-family: white;
+	font-size: 100%;
+}
+.minusButton{
+	background-color: #db2828;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+    border-width : 0px;
+    box-shadow: inset 0 -2px 0 0 #bf2728;
+	display: inline-block;
+}
+.plusButton{
+	background-color: #22ba46;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+    border-width : 0px;
+      box-shadow: inset 0 -2px 0 0 #21a340;
+	display: inline-block;
+}
+.buttonsSect{
+	display: inline-block;
+	alignment: center;
+}
+.secondLine{
+	height: 25%;
+	display: inline;
+	display: flex;
+	justify-content: space-between;
+}
+.thirdLine{
+	height: 25%;
+	display: inline;
+	display: flex;
+	justify-content: space-between;
+}
+.fourthLine{
+	height: 25%;
+	display: inline;
+	display: flex;
+	justify-content: space-between;
+}
+.product1{
+	font-weight: bold;
+}
+.product2{
+	font-weight: bold;
+}
+.product3{
+	font-weight: bold;
+}
+.boughtButton{
+	background-color: #f4f4f4;
+	box-shadow: inset 0 -5px 0 0 #ffffff;
+	font-family: sans-serif;
+	font-size: 80%;
+	font-weight: bold;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 6px;
+}
+.cancelBought{
+}
+.amount1{
+ background-color: lightgrey;
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 80%;
+	border-radius: 5px;
+}
+.cancelButton{
+	background-color: #db2828;
+	box-shadow: inset 0 -2px 0 0 #bf2728;
+	color: white;
+	border-radius: 4px;
+	border-width: 0px;
+	text-align: center;
+	display: inline-block;
+}
+.number{
+	background-color: lightgrey;
+	text-align: center;
+	color: black;
+	border-radius: 2px;
+}
+
+.secondRectangle{
+	width:30%;
+	background-color : white;
+	margin: 2px;
+	display: inline-block;
+	border-radius: 5px;
+}
+.firstLine2{
+	height: 25%
+}
+.secondLine2{
+	height: 25%;
+	display: inline-block;
+}
+.thirdLine2{
+	height: 25%;
+}
+.fourthLine2{
+	height: 25%;
 }
