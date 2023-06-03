@@ -4,6 +4,7 @@
 	border-radius: 5px;
 	display: flex;
 	justify-content: space-between;
+	height: 400px;
 }
 .amount {
 	background-color: orange;
@@ -14,26 +15,88 @@
 	width: 20px;
 	text-align: center;
 }
+.badge {
+	position: fixed;
+	bottom: -75px;
+	left: 10px;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #6C63FF;
+;
+	background-color: #6C63FF;
+	color: #FFFFFF;
+	border-radius: 5px;
+	text-align: center;
+	transition: transform 0.3s, background-color 0.3s;
+	cursor: pointer;
+}
+
+.badge:hover {
+	transform: translateY(-90px);
+	background-color: #8F89FF;
+}
+
+.badge-content {
+	padding: 5px;
+	transition: opacity 0.3s;
+}
+
+.badge:hover .badge-content {
+	opacity: 1;
+}
+
+@media print {
+	.badge {
+		height: 70px;
+		padding-top: 20px;
+		border-radius: 20px 20px 0 0;
+		border-color: #6C63FF;
+		background-color: #FFFFFF;
+		color: #6C63FF;
+	}
+	.badge-content-print {
+		transform: translateY(-20px);
+	}
+}
+@media (max-width: 500px) {
+	.container{
+		flex-direction: column;
+	}
+	.firstRectangle,
+	.secondRectangle{
+		flex-grow: 1;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+}
 .firstRectangle{
 	width: 70%;
+	height: 76%;
 	background-color: white;
 	margin-right: 2%;
+	margin-top: 3%;
 	display: inline-block;
     border-radius: 5px;
 }
 .firstLine{
 	align-items: center;
-	height: 25%;
+	height: 17.5%;
 }
 .typeArea{
-	border-width: 2px;
-	height: 80%;
+	margin-left: 21px;
+	margin-bottom: 21px;
+	margin-top: 21px;
+	height: 32px;
+	width: 80%;
+	max-width: 75%;
+	font-size: 17px;
 }
 .firstLine button{
-	width: 20%;
-	max-width: 20%;
-	margin-right: 20px ;
-	height: 80%;
+	width: 17.4%;
+	max-width: 17.4%;
+	height: 70%;
+	max-height: 70%;
+	margin-right: 0 ;
 	background-color: #2285d0;
 	color: white;
 	border-radius: 0 5px 5px 0;
@@ -42,6 +105,7 @@
 	font-size: 100%;
 	box-shadow: inset 0 -4px 0 0 #2276b7;
 }
+/*
 .firstLine input{
 	width: 70%;
 	max-width: 70%;
@@ -49,58 +113,79 @@
 	font-family: white;
 	font-size: 100%;
 }
+
+ */
 .minusButton{
 	background-color: #db2828;
 	color: white;
-	border-radius: 10px;
+	border-radius: 50%;
 	text-align: center;
     border-width : 0px;
+	width: 25%;
+	height: 55%;
     box-shadow: inset 0 -2px 0 0 #bf2728;
 	display: inline-block;
 }
 .plusButton{
 	background-color: #22ba46;
 	color: white;
-	border-radius: 10px;
+	border-radius: 50%;
 	text-align: center;
     border-width : 0px;
+	width: 25%;
+	height: 55%;
       box-shadow: inset 0 -2px 0 0 #21a340;
 	display: inline-block;
 }
+.number {
+	width: 25%;
+	display: inline-block;
+}
 .buttonsSect{
+	height: 100%;
 	display: inline-block;
 	alignment: center;
+	margin-top: 11px;
+	width: 14%
 }
 .secondLine{
-	height: 25%;
-	display: inline;
-	display: flex;
-	justify-content: space-between;
-}
-.thirdLine{
-	height: 25%;
-	display: inline;
-	display: flex;
-	justify-content: space-between;
-}
-.fourthLine{
-	height: 25%;
+	height: 17.5%;
 	display: inline;
 	display: flex;
 	justify-content: space-between;
 }
 .product1{
+	margin-left: 25px;
+	margin-top: 17px;
 	font-weight: bold;
+}
+.thirdLine{
+	height: 17.5%;
+	display: inline;
+	display: flex;
+	justify-content: space-between;
 }
 .product2{
+	margin-left: 25px;
+	margin-top: 17px;
 	font-weight: bold;
 }
+.fourthLine{
+	height: 17.5%;
+	display: inline;
+	display: flex;
+	justify-content: space-between;
+}
 .product3{
+	margin-left: 25px;
+	margin-top: 17px;
 	font-weight: bold;
 }
 .boughtButton{
-	background-color: #f4f4f4;
-	box-shadow: inset 0 -5px 0 0 #ffffff;
+	height: 55%;
+	width:68%;
+	background-color: #2285d0;
+	box-shadow: inset 0 -5px 0 0 #a6a6a7;
 	font-family: sans-serif;
 	font-size: 80%;
 	font-weight: bold;
@@ -108,7 +193,24 @@
 	border: 1px solid gray;
 	border-radius: 6px;
 }
+.cancelButton{
+	height: 55%;
+	width: 27%;
+	background-color: #db2828;
+	box-shadow: inset 0 -2px 0 0 #bf2728;
+	color: white;
+	border-radius: 10px;
+	border-width: 0px;
+	text-align: center;
+	font-weight: bold;
+	display: inline-block;
+}
 .cancelBought{
+	height: 120%;
+	width: 17%;
+	margin-right: 3%;
+	margin-top: 1%;
+
 }
 .amount1{
  background-color: lightgrey;
@@ -116,15 +218,6 @@
 	font-family: sans-serif;
 	font-size: 80%;
 	border-radius: 5px;
-}
-.cancelButton{
-	background-color: #db2828;
-	box-shadow: inset 0 -2px 0 0 #bf2728;
-	color: white;
-	border-radius: 4px;
-	border-width: 0px;
-	text-align: center;
-	display: inline-block;
 }
 .number{
 	background-color: lightgrey;
@@ -135,21 +228,73 @@
 
 .secondRectangle{
 	width:30%;
+	height: 76%;
 	background-color : white;
-	margin: 2px;
 	display: inline-block;
 	border-radius: 5px;
+	margin-top: 3%;
 }
 .firstLine2{
-	height: 25%
+	height: 15.8%;
 }
+.firstLine2 h1{
+	font-size: 20px;
+	margin-left: 5%;
+	margin-top: 7%;
+}
+
 .secondLine2{
-	height: 25%;
+	height: 17.2%;
+	width:100%;
 	display: inline-block;
 }
+.info{
+	margin-left: 5%;
+	margin-top: 3.5%;
+}
+.amount1{
+	height: 10%;
+	font-size: 80%;
+	font-family: sans-serif;
+}
 .thirdLine2{
-	height: 25%;
+	height: 13%;
+}
+.thirdLine2 h1{
+	font-size: 20px;
+	margin-left: 5%;
+	margin-top: 6%;
 }
 .fourthLine2{
-	height: 25%;
+	height: 17.5%;
+}
+.fourthLine2 label{
+	margin-left: 5%;
+	font-family: Arial;
+	font-size: 100%;
+}
+button {
+	position: relative;
+	transform-style: preserve-3d;
+}
+button:after{
+	content: attr(data-tooltip) ;
+	padding: 5px;
+	bottom: 100%;
+	min-width:50px;
+	position: absolute;
+	white-space: nowrap;
+	transform: translate(-50%, 5px) translateZ(-1px);
+	border-radius: 5px;
+	left: 50%;
+	background: #AF01DA;
+	color: white;
+	transition: 0.5s;
+	visibility: hidden;
+
+}
+button:hover::after {
+	transform: translate(-50%, -5px) translateZ(0);
+	visibility: visible;
+	display: block;
 }
