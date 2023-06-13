@@ -82,7 +82,7 @@
 	align-items: center;
 	height: 17.5%;
 }
-.typeArea{
+.firstLine typeArea{
 	margin-left: 21px;
 	margin-bottom: 21px;
 	margin-top: 21px;
@@ -206,12 +206,9 @@
 	display: inline-block;
 }
 .cancelBought{
-	height: 120%;
-	width: 17%;
-	margin-right: 3%;
-	margin-top: 1%;
-
 }
+
+
 .amount1{
  background-color: lightgrey;
 	display: inline-block;
