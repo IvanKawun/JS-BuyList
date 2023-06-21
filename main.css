@@ -1,10 +1,13 @@
+.body{
+	background-color: lightgrey;
+}
 .container {
-	background-color: lightgray;
 	padding: 5px;
 	border-radius: 5px;
 	display: flex;
 	justify-content: space-between;
 	height: 400px;
+	background-color: lightgrey;
 }
 .amount {
 	background-color: orange;
@@ -22,7 +25,6 @@
 	width: 100px;
 	height: 100px;
 	border: 2px solid #6C63FF;
-;
 	background-color: #6C63FF;
 	color: #FFFFFF;
 	border-radius: 5px;
@@ -44,7 +46,6 @@
 .badge:hover .badge-content {
 	opacity: 1;
 }
-
 @media print {
 	.badge {
 		height: 70px;
@@ -55,7 +56,7 @@
 		color: #6C63FF;
 	}
 	.badge-content-print {
-		transform: translateY(-20px);
+		@transform: translateY(-20px);
 	}
 }
 @media (max-width: 500px) {
@@ -68,35 +69,37 @@
 		margin-bottom: 10px;
 		margin-right: 0;
 	}
+	.firstLine button{
+		width: 5%;
+	}
 }
 .firstRectangle{
+	max-width: 70%;
 	width: 70%;
-	height: 76%;
 	background-color: white;
-	margin-right: 2%;
-	margin-top: 3%;
+	margin-left: 1%;
+	margin-top: 1%;
+	margin-bottom: 2%;
 	display: inline-block;
-    border-radius: 5px;
+	border-radius: 5px;
 }
 .firstLine{
-	align-items: center;
-	height: 17.5%;
+	height: 18%;
+	width: 100%;
 }
-.firstLine typeArea{
-	margin-left: 21px;
+.typeArea{
+	margin-left: 2%;
 	margin-bottom: 21px;
 	margin-top: 21px;
 	height: 32px;
-	width: 80%;
+	width: 75%;
 	max-width: 75%;
 	font-size: 17px;
 }
 .firstLine button{
-	width: 17.4%;
-	max-width: 17.4%;
-	height: 70%;
-	max-height: 70%;
-	margin-right: 0 ;
+	width: 20%;
+	height: 60%;
+	max-height: 90%;
 	background-color: #2285d0;
 	color: white;
 	border-radius: 0 5px 5px 0;
@@ -105,88 +108,141 @@
 	font-size: 100%;
 	box-shadow: inset 0 -4px 0 0 #2276b7;
 }
-/*
-.firstLine input{
-	width: 70%;
-	max-width: 70%;
+.secondLine{
+	display: flex;
+	justify-content: space-between;
+	height: 18%;
+}
+.secondLine .product{
+	border:Transparent;
+	background: Transparent;
+	margin-left: 9%;
+	margin-top:9%;
+	display: inline-block;
+	font-weight: bold;
+	font-family: Arial;
+}
+.thirdLine{
+	display: flex;
+	justify-content: space-between;
+	height: 18%;
+}
+.newLine{
+	display: flex;
+	justify-content: space-between;
+	height: 18%;
+}
+.newLine .product{
+	border:Transparent;
+	background: Transparent;
+	margin-left: 9%;
+	margin-top:9%;
+	display: inline-block;
+	font-weight: bold;
+	font-family: Arial;
+}
+.thirdLine .product{
+	border:Transparent;
+	background: Transparent;
+	margin-left: 9%;
+	margin-top:9%;
+	display: inline-block;
+	font-weight: bold;
+	font-family: Arial;
+}
+.fourthLine{
+	display: flex;
+	justify-content: space-between;
+	height: 18%;
+}
+.fourthLine .product{
+	border:Transparent;
+	background: Transparent;
+	margin-left: 9%;
+	margin-top:9%;
+	display: inline-block;
+	font-weight: bold;
+	font-family: Arial;
+}
+.secondRectangle{
+	max-width: 25%;
+	width: 25%;
 	background-color: white;
-	font-family: white;
-	font-size: 100%;
+	margin-top: 1%;
+	margin-right: 1%;
+	display: inline-block;
+	border-radius: 5px;
+	margin-bottom: 2%;
+}
+.amount1{
+	background-color: lightgrey;
+	border-radius: 5px;
+	display: inline-block;
 }
 
- */
+.firstLine2{
+	height: 18.4%;
+	font-family: Arial;
+	font-size: 93%;
+	margin-left: 4%;
+}
+.secondLine2{
+	height: 18%;;
+	display: inline-block;
+	margin-left: 4%;
+}
+.thirdLine2{
+	height: 15.3%;
+	font-family: Arial;
+	font-size: 90%;
+	margin-left: 4%;
+}
+.fourthLine2{
+	height: 18%;
+}
+.fourthLine2 .label{
+	display: none;
+}
 .minusButton{
 	background-color: #db2828;
 	color: white;
 	border-radius: 50%;
 	text-align: center;
-    border-width : 0px;
+	border-width : 0px;
 	width: 25%;
 	height: 55%;
-    box-shadow: inset 0 -2px 0 0 #bf2728;
-	display: inline-block;
+	box-shadow: inset 0 -2px 0 0 #bf2728;
 }
 .plusButton{
 	background-color: #22ba46;
 	color: white;
 	border-radius: 50%;
 	text-align: center;
-    border-width : 0px;
+	border-width : 0px;
 	width: 25%;
 	height: 55%;
-      box-shadow: inset 0 -2px 0 0 #21a340;
-	display: inline-block;
+	box-shadow: inset 0 -2px 0 0 #21a340;
 }
-.number {
+.number{
+	background-color: lightgrey;
 	width: 25%;
-	display: inline-block;
+	height: 55%;
 }
+
 .buttonsSect{
+	margin-top:1%;
 	height: 100%;
 	display: inline-block;
 	alignment: center;
-	margin-top: 11px;
-	width: 14%
-}
-.secondLine{
-	height: 17.5%;
-	display: inline;
-	display: flex;
-	justify-content: space-between;
-}
-.product1{
-	margin-left: 25px;
-	margin-top: 17px;
-	font-weight: bold;
-}
-.thirdLine{
-	height: 17.5%;
-	display: inline;
-	display: flex;
-	justify-content: space-between;
-}
-.product2{
-	margin-left: 25px;
-	margin-top: 17px;
-	font-weight: bold;
-}
-.fourthLine{
-	height: 17.5%;
-	display: inline;
-	display: flex;
-	justify-content: space-between;
-}
-.product3{
-	margin-left: 25px;
-	margin-top: 17px;
-	font-weight: bold;
+	width:15%;
+	height: 90%;
 }
 .boughtButton{
-	height: 55%;
-	width:68%;
+	height: 80%;
+	width: 65%;
 	background-color: #2285d0;
 	box-shadow: inset 0 -5px 0 0 #a6a6a7;
-	font-family: sans-serif;
+	font-family: Arial;
 	font-size: 80%;
 	font-weight: bold;
 	background-color: white;
@@ -194,8 +250,8 @@
 	border-radius: 6px;
 }
 .cancelButton{
-	height: 55%;
-	width: 27%;
+	height: 80%;
+	width:25%;
 	background-color: #db2828;
 	box-shadow: inset 0 -2px 0 0 #bf2728;
 	color: white;
@@ -206,70 +262,16 @@
 	display: inline-block;
 }
 .cancelBought{
-}
-
-
-.amount1{
- background-color: lightgrey;
+	margin-top: 1%;
 	display: inline-block;
-	font-family: sans-serif;
-	font-size: 80%;
-	border-radius: 5px;
+	width:18%;
 }
-.number{
-	background-color: lightgrey;
-	text-align: center;
-	color: black;
-	border-radius: 2px;
+.canBo {
+	margin-top: 1%;
+	display: inline-block;
+	width:18%;
 }
 
-.secondRectangle{
-	width:30%;
-	height: 76%;
-	background-color : white;
-	display: inline-block;
-	border-radius: 5px;
-	margin-top: 3%;
-}
-.firstLine2{
-	height: 15.8%;
-}
-.firstLine2 h1{
-	font-size: 20px;
-	margin-left: 5%;
-	margin-top: 7%;
-}
-
-.secondLine2{
-	height: 17.2%;
-	width:100%;
-	display: inline-block;
-}
-.info{
-	margin-left: 5%;
-	margin-top: 3.5%;
-}
-.amount1{
-	height: 10%;
-	font-size: 80%;
-	font-family: sans-serif;
-}
-.thirdLine2{
-	height: 13%;
-}
-.thirdLine2 h1{
-	font-size: 20px;
-	margin-left: 5%;
-	margin-top: 6%;
-}
-.fourthLine2{
-	height: 17.5%;
-}
-.fourthLine2 label{
-	margin-left: 5%;
-	font-family: Arial;
-	font-size: 100%;
-}
 button {
 	position: relative;
 	transform-style: preserve-3d;
@@ -295,3 +297,5 @@ button:hover::after {
 	visibility: visible;
 	display: block;
 }
+
+

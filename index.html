@@ -1,98 +1,342 @@
 <!DOCTYPE html>
 <html>
 <head lang="uk">
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+	<title>My Page</title>
 
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-	<div class="container">
-		<div class="badge">
-			<div class="badge-content">BuyList</div>
-			<div class="badge-content-print">Автор: Мошковський Іван</div>
-		</div>
-		<div class = "firstRectangle">
+<div class="container">
+	<div class="badge">
+		<div class="badge-content">BuyList</div>
+		<div class="badge-content-print">Автор: Мошковський Іван</div>
+	</div>
+	<div class = "firstRectangle" id="firstrect">
 		<section class="firstLine">
-			<input type="text" class="typeArea" name="plusProduct" placeholder="Назва товару">
-			<button type="button"  data-tooltip="Додати">Додати</button>
+			<input type="text" class="typeArea" id="12345" name="plusProduct" placeholder="Назва товару">
+			<button type="button" onclick = "productAdd()"  class="btn" data-tooltip="Додати">Додати</button>
 		</section> 	<br>
-			<hr>
+		<hr>
 		<section class="secondLine">
-			<label class="product1">Помідори</label>
+			<label>
+				<input type="text" class="product" id ="gklremg-i5mg03ut3208"  onclick = "saveName(id)" onchange="changeName(id)" value = "Помідори" >
+				<label></label>
+			</label>
 			<section class ="buttonsSect">
-			<button type="button" class="minusButton" data-tooltip="-">-</button>
-			<label class="number">2</label>
-			<button type="button" class="plusButton" data-tooltip="+">+</button>
+				<button type="button" class="minusButton" id = "876484687687648764876478" onclick = "minusOne(id)" data-tooltip="-">-</button>
+				<label class="number">2</label>
+				<button type="button" class="plusButton" id="qetqe314135135" onclick = "plusOne(id)"data-tooltip="+">+</button>
 			</section>
 			<section class="cancelBought">
-			<button type="button" class="boughtButton" data-tooltip="Куплено">Куплено</button>
-			<button type="button" class="cancelButton" data-tooltip="x">x</button>
+				<button type="button" class="boughtButton" id ="-429u6t -4096i.,3w254hg96." onclick = "bought(id)" data-tooltip="Куплено">Куплено</button>
+				<button type="button" class="cancelButton" id="91857139571895713" onclick = "removeProduct(id)" data-tooltip="x">x</button>
 			</section>
 
 		</section>
-			<hr>
+		<hr>
 		<section class="thirdLine">
-			<label class="product2">Печиво</label>
+			<label>
+				<input type="text" class="product" id ="5w0-564uy064jy3-06jy3i" onclick = "saveName(id)" onchange="changeName(id)" value = "Печиво" >
+			</label>
 			<section class ="buttonsSect">
-			<button type="button" class="minusButton" data-tooltip="-">-</button>
-			<label class="number">2</label>
-			<button type="button" class="plusButton" data-tooltip="+">+</button>
+				<button type="button" class="minusButton" id = "13673i944894687327" onclick = "minusOne(id)" data-tooltip="-">-</button>
+
+				<label class="number">2</label>
+				<button type="button" class="plusButton" id="glkprjg12085utj40ig" onclick = "plusOne(id)" data-tooltip="+">+</button>
 			</section>
 			<section class="cancelBought">
-			<button type="button" class="boughtButton" data-tooltip="Куплено">Куплено</button>
-			<button type="button" class="cancelButton" data-tooltip="x">x</button>
+				<button type="button" class="boughtButton" id="q430,g6834-096y,g35960" onclick = "bought(id)" data-tooltip="Куплено">Куплено</button>
+				<button type="button" class="cancelButton" id="81439151395713" onclick = "removeProduct(id)" data-tooltip="x">x</button>
 			</section>
 		</section>
-			<hr>
+		<hr>
 		<section class = "fourthLine">
-			<label class="product3">Сир</label>
+			<label>
+				<input type="text" class="product" id ="pgjwrg0u249gu523hg2ji" onclick = "saveName(id)" onchange="changeName(id)" value = "Сир" >
+			</label>
 			<section class ="buttonsSect">
-			<button type="button" class="minusButton" data-tooltip="-">-</button>
-				<section class="number">
-			<label class="number">1</label>
-				</section>
-			<button type="button" class="plusButton" data-tooltip="+">+</button>
+				<button type="button" class="minusButton" id = "897897879879" onclick = "minusOne(id)" data-tooltip="-">-</button>
+				<label class="number">1</label>
+				<button type="button" class="plusButton" id="er-09ut1809jt50249tk2" onclick = "plusOne(id)" data-tooltip="+">+</button>
 			</section>
 			<section class="cancelBought">
-			<button type="button" class="boughtButton" data-tooltip="Куплено">Куплено</button>
-			<button type="button" class="cancelButton" data-tooltip="x" >x</button>
+				<button type="button" class="boughtButton" id="ew0ruwgbe09tgwme,i" onclick = "bought(id)" data-tooltip="Куплено">Куплено</button>
+				<button type="button" class="cancelButton" id="123456789" onclick = "removeProduct(id)" data-tooltip="x" >x</button>
 			</section>
 		</section>
-		</div>
-		<div class = "secondRectangle">
+	</div>
+	<div class = "secondRectangle">
 		<section class="firstLine2">
 			<h1 >Залишилося</h1>
 		</section>
-			<hr>
+		<hr>
 		<section class="secondLine2">
-			<section class="info">
-			<section class="amount1">
-				<label>Помідори</label>
-				<label class="amount">2</label>
-			</section>
-			<section class="amount1">
-				<label>Печиво</label>
-				<label class="amount">2</label>
-			</section>
-			<section class="amount1">
-				<label>Сир</label>
-				<label class="amount">1</label>
-			</section>
+			<section class="info" id="information">
+				<section class="amount1">
+					<label id="1236">Помідори</label>
+					<label class="amount">2</label>
+				</section>
+				<section class="amount1">
+					<label id="1237">Печиво</label>
+					<label class="amount">2</label>
+				</section>
+				<section class="amount1">
+					<label id="1238">Сир</label>
+					<label class="amount">1</label>
+				</section>
 			</section>
 		</section>
-			<hr>
+		<hr>
 		<section class="thirdLine2">
 			<h1>Куплено</h1>
 		</section>
-			<hr>
-		<section class="fourthLine2">
-			<label>something</label>
+		<hr>
+		<section class="fourthLine2" id="fourthLineTwo">
 
 		</section>
-		</div>
 	</div>
+</div>
+<script>
+	document.getElementById("12345").addEventListener('keypress', function (e) {
+		if (e.key === 'Enter') {
+			productAdd();
+		}});
+	function productAdd() {
+
+		if (document.getElementById("12345").value != "") {
+			//Right rectangle
+			let SecLine = document.getElementById("information");
+			let newAmount = document.createElement("section");
+			let amount = document.createElement("label");
+			let name1 = document.createElement("label");
+
+			name1.textContent = document.getElementById("12345").value;
+			amount.textContent = "1";
+			amount.className = "amount";
+			newAmount.className = "amount1";
+			SecLine.className = "info";
+
+			newAmount.appendChild(name1);
+			newAmount.appendChild(amount);
+			SecLine.appendChild(newAmount);
+
+			//Left rectangle
+			let name = document.getElementById("12345").value;
+			document.getElementById("12345").value = "";
+			let firstRect = document.getElementById("firstrect");
+			let newLine = document.createElement("section");
+			newLine.classList.add('newLine');
+			newLine.innerHTML =
+					`<label>
+                <input type="text" class="product" id =${random()} onclick = "saveName(id)" onchange="changeName(id)" value = ${name} >
+            </label>
+        <section className="buttonsSect">
+            <button type="button" className="minusButton" id =${random()} onclick = "minusOne(id)" data-tooltip="-">-</button>
+            <label class="number">1</label>
+            <button type="button" className="plusButton" id =${random()} onclick = "plusOne(id)" data-tooltip="+">+</button>
+        </section>
+        <section className="cancelBought">
+            <button type="button" className="boughtButton" id =${random()} onclick = "bought(id)" data-tooltip="Куплено">Куплено</button>
+            <button type="button" className="cancelButton" id =${random()} onclick = "removeProduct(id)" data-tooltip="x">x</button>
+        </section>
+        `
+			firstRect.appendChild(newLine);
+		}
+	}
+	function plusOne(id){
+		let button = document.getElementById(id);
+		let buttonSect = button.parentNode;
+		let numb = parseInt(buttonSect.querySelector(".number").textContent);
+		let line = buttonSect.parentNode;
+		numb++;
+		const element = document.createElement('label')
+		element.className = "number";
+		element.textContent = numb.toString();
+		buttonSect.replaceChild(element, buttonSect.querySelector(".number"))
+		let name = line.children[0].children[0].value;
+		for(let i=0; i< document.getElementById("information").children.length; i++) {
+			if (document.getElementById("information").children[i].children[0].textContent === name) {
+				const element = document.createElement("label");
+				element.className = "amount";
+				element.textContent = numb.toString();
+				document.getElementById("information").children[i].replaceChild(element,
+						document.getElementById("information").children[i].children[1]);
+			}
+		}
+	}
+
+	function minusOne(id){
+		let button = document.getElementById(id);
+		let buttonSect = button.parentNode;
+		let line = buttonSect.parentNode;
+		console.log(buttonSect);
+		let numb = parseInt(buttonSect.querySelector(".number").textContent);
+		if(numb>1) {
+			numb--;
+			const element = document.createElement('label')
+			element.className = "number";
+			element.textContent = numb.toString();
+			buttonSect.replaceChild(element, buttonSect.querySelector(".number"))
+			let name = line.children[0].children[0].value;
+			for(let i=0; i< document.getElementById("information").children.length; i++){
+				if(document.getElementById("information").children[i].children[0].textContent === name){
+					const element = document.createElement("label");
+					element.className = "amount";
+					element.textContent = numb.toString();
+					document.getElementById("information").children[i].replaceChild(element,
+							document.getElementById("information").children[i].children[1]);
+					//document.getElementById("information").children[i].children[1].value = numb;
+				}
+			}
+		}
+	}
+
+	function removeProduct(id){
+		let button = document.getElementById(id);
+		let buttonSect = button.parentNode;
+		let line = buttonSect.parentNode;
+		let name = line.children[0].children[0].value;
+		for(let i=0; i< document.getElementById("information").children.length; i++){
+			if(document.getElementById("information").children[i].children[0].textContent === name){
+				document.getElementById("information").children[i].remove();
+			}
+		}
+
+		line.remove();
+	}
+
+	function bought(id){
+		//Left rectangle
+		let button = document.getElementById(id);
+		let cancelBought = button.parentNode;
+		let line = cancelBought.parentNode;
+		let name = line.firstElementChild.firstElementChild.value;
+
+		line.firstElementChild.firstElementChild.style.textDecoration = 'line-through';
+		line.firstElementChild.firstElementChild.readOnly = true;
+		line.children[1].style.display = "none";
+		line.children[2].remove();
+
+		let canBo = document.createElement("section");
+		canBo.innerHTML =` <button type="button" class="boughtButton" id =${random()} onclick = "notBought(id)"
+            data-tooltip="Не куплено">Не куплено</button>
+                <button type="button" class="cancelButton" id="91857139571895713" onclick = "removeProduct(id)" data-tooltip="x">x</button>`
+		line.appendChild(canBo);
+		line.children[2].children[1].style.display ="none";
+		let numb = document.createElement("section");
+		//Right rectangle
+		for(let i=0; i< document.getElementById("information").children.length; i++){
+			if(document.getElementById("information").children[i].children[0].textContent === name){
+				numb =  document.getElementById("information").children[i];
+				document.getElementById("information").children[i].remove();
+			}
+		}
+		document.getElementById("fourthLineTwo").appendChild(numb);
+
+
+
+
+		/*
+        const notBought = document.createElement("button")
+        notBought.innerHTML =
+        `<button className="boughtButton" data-tooltip = "Не куплено" style="order : 3" id ="1384137487139481" onclick="notBought(id)">
+        Не куплено
+        </button>
+        `
+        const cancelButton = document.createElement("button");
+        cancelButton.innerHTML =
+            ` <button type="button" className="cancelButton" id=${random()} onClick="removeProduct(id)"
+                    data-tooltip="x">x</button>`
+        cancelBougth.appendChild(cancelButton);
+
+         */
+	}
+	function random(){
+		return  Math.floor(Math.random() * 10000)
+	}
+	function changeName(id){
+		console.log(x);
+		console.log(document.getElementById("information").children[x].children[0].textContent);
+		let name = document.getElementById(id).value;
+		console.log(name);
+		document.getElementById("information").children[x].children[0].textContent = name;
+
+
+	}
+	let x;
+	function saveName(id){
+		let name = document.getElementById(id).value;
+		for(let i=0; i< document.getElementById("information").children.length; i++){
+			if(document.getElementById("information").children[i].children[0].textContent === name){
+				x = i;
+			}
+		}
+	}
+	function notBought(id){
+		//Left rectangle
+		let button = document.getElementById(id);
+		let cancelBougth = button.parentNode;
+		let line = cancelBougth.parentNode;
+		line.children[2].children[1].style.display = "inline-block";
+		line.children[0].children[0].style.textDecoration = "none";
+		line.children[0].children[0].readOnly = false;
+		let name = line.firstElementChild.firstElementChild.value;
+		line.children[2].remove();
+		let canBo = document.createElement("section");
+		canBo.innerHTML =` <button type="button" class="boughtButton" id =${random()} onclick = "bought(id)"
+            data-tooltip="Куплено">Куплено</button>
+                <button type="button" class="cancelButton" id="91857139571895713" onclick = "removeProduct(id)" data-tooltip="x">x</button>`
+		line.appendChild(canBo);
+		line.children[1].style.display = "inline-block";
+		//Right rectangle
+		let numb = document.createElement("section");
+		console.log(name);
+		for(let i = 0; i<document.getElementById("fourthLineTwo").children.length; i++) {
+			if (document.getElementById("fourthLineTwo").children[i].firstElementChild.textContent === name) {
+				numb = document.getElementById("fourthLineTwo").children[i];
+				document.getElementById("fourthLineTwo").children[i].remove();
+			}
+		}
+		document.getElementById("information").appendChild(numb);
+
+
+
+		/*
+        const cancelButton = document.createElement("button");
+        cancelButton.innerHTML =
+           ` <button type="button" className="cancelButton" id=${random()} onClick="removeProduct(id)"
+                    data-tooltip="x">x</button>`
+        cancelBougth.appendChild(cancelButton);
+        let canBougel = cancelBougth;
+
+        let line = cancelBougth.parentNode;
+        let line1 = line.parentNode;
+
+        const buttonSect = document.createElement("container");
+        buttonSect.innerHTML = ` <section className="buttonsSect">
+            <button type="button" className="minusButton" id =${random()} onclick = "minusOne(id)" data-tooltip="-">-</button>
+            <label className="number">1</label>
+            <button type="button" className="plusButton" id =${random()} onclick = "plusOne(id)" data-tooltip="+">+</button>
+        </section>`
+        line1.children[1].style.display = "inline-block";
+        //console.log(line1.children[0].children[0]);
+        line1.children[0].children[0].style.textDecoration = "none";
+        line1.children[0].children[0].readOnly = false;
+
+        let boughtButton = document.createElement("container");
+        boughtButton.innerHTML = `<button type="button" className="boughtButton" id=${random()} onClick="bought(id)"
+                data-tooltip="Куплено">Куплено</button>`
+        line1.children[2].children[0].children[0].remove();
+        line1.children[2].children[0].children[0].remove();
+        line1.children[2].children[0].appendChild(boughtButton);
+        console.log(line1.children[2].children[0].children[0])
+        /*
+        line1.children[2].children[0].appendChild(cancelButton)
+         */
+	}
+</script>
 </body>
 </html>
